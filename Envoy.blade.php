@@ -4,7 +4,7 @@ require __DIR__.'/vendor/autoload.php';
 $server = "road-to-php.com";
 $userAndServer = 'forge@'. $server;
 $repository = "brendt/road-to-php.com";
-$baseDir = "/home/forge/road-to-php.com";
+$baseDir = "/home/forge/road-to-php.com/current";
 $currentDir = $baseDir;
 
 function logMessage($message) {
