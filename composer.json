@@ -1,0 +1,10 @@
+{
+    "name": "brendt/road-to-php",
+    "authors": [
+        {
+            "name": "Brent Roose",
+            "email": "brendt@stitcher.io"
+        }
+    ],
+    "require": {}
+}
