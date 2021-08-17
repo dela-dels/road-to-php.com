@@ -6,5 +6,8 @@
             "email": "brendt@stitcher.io"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "laravel/envoy": "^2.7"
+    }
 }
