@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <title>The Road to PHP 8.1</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="twitter:card" content="article">
+    <meta name="title" content="The Road to PHP 8.1">
+    <meta name="twitter:title" content="The Road to PHP 8.1">
+    <meta name="description" content="Join the Road to PHP: a 10-day newsletter to get you up to speed about what's new in PHP 8.1">
+    <meta name="twitter:description" content="Join the Road to PHP: a 10-day newsletter to get you up to speed about what's new in PHP 8.1">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Road to PHP 8.1">
+    <meta property="og:description" content="Join the Road to PHP: a 10-day newsletter to get you up to speed about what's new in PHP 8.1">
+    <meta itemprop="name" content="The Road to PHP 8.1">
+    <meta itemprop="description" content="Join the Road to PHP: a 10-day newsletter to get you up to speed about what's new in PHP 8.1">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:image" content="https://road-to-php.com/meta.png">
+    <meta name="twitter:creator" content="@brendt_gd">
+    <meta property="og:image" content="https://road-to-php.com/meta.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+
+        body {
+            background: #dfecea;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        .stitcher {
+            background-color: #dfecea;
+            padding: 6px 6px;
+            font-family: Helvetica Nueu, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: bold;
+        }
+
+        .form {
+            background-color: #f1f7f6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="pt-16 w-auto flex justify-center items-center">
+    <div class="bg-white shadow-xl lg:mt-16 mx-4 w-auto lg:w-8/12 xl:6/12 2xl:w-4/12 lg:px-8 lg:py-16 px-4 py-8">
+        <h1 class="
+            text-center
+            title
+            text-xl lg:text-3xl text-white font-bold
+            bg-black
+            p-4 mx-auto
+        ">
+            The Road to PHP: Static Analysis
+        </h1>
+
+        <h2 class="
+            text-md lg:text-2xl
+            mt-6 mx-auto py-6 px-8
+            text-center
+        ">Join the Road to PHP: a 10-day newsletter series to get you started with static analysis.</h2>
+
+        <div class="
+            form
+            bg-black
+            mt-6 p-6
+            text-md lg:text-xl
+        ">
+            <form action="https://mail.stitcher.io/subscribe/b743c5ee-fdf5-42f5-983c-22da0c114134" method="post"
+                class="lg:grid grid-cols-1 lg:grid-cols-2 gap-4"
+            >
+                <div class="grid grid-cols-1 gap-2 mb-2">
+                    <label for="first_name">Your name</label>
+                    <input class="text-lg px-2 py-1 border-2 border-white" name="first_name" id="first_name" type="text" required/>
+                </div>
+
+                <div class="grid grid-cols-1 gap-2 mb-2">
+                    <label for="email">Email</label>
+                    <input class="text-lg px-2 py-1 border-2 border-white" name="email" id="email" type="email" required/>
+                </div>
+
+                <div class="lg:col-span-2 text-left">
+                    <div class="text-center lg:text-left lg:flex lg:items-center">
+                        <button type="submit" class="mt-4 lg:mt-0 font-mono bg-white text-black px-2 py-1">subscribe</button>
+
+                        <p class="lg:ml-8 mt-4 lg:mt-0 text-sm">
+                            You'll be automatically removed from this list after 10 days, no marketing mails or any other kind of followup!
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="
+            p-4
+            mt-4
+            text-center
+        ">
+            <strong>Not an email-type of person?</strong> You can read my <a class="underline hover:no-underline" href="https://front-line-php.com/">book on modern day PHP</a> instead! It covers everything from PHP 7 and 8, as well as best-practices, patterns, OOP and more!
+            I'm currently still working on adding chapters for PHP 8.1, which you'll receive for free if you purchase the book today.
+        </div>
+
+        <div class="mt-16 mb-16 text-center">
+            <a href="https://stitcher.io/" class="hover:underline stitcher">&copy; 2021 stitcher.io</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // SCOPE
+    var url = (new URL(document.location));
+    var params = url.searchParams;
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'https://scope.spatie.be/scope', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        url: window.location.href,
+        screen_size: window.innerWidth,
+        referrer: document.referrer,
+        utm_campaign: params.get('utm_campaign'),
+        utm_source: params.get('utm_source'),
+        utm_medium: params.get('utm_medium'),
+        site_uuid: '0df3bc8e-704e-4302-ade5-d0a24d0507a1',
+    }));
+</script>
+
+</body>
+</html>
