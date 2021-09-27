@@ -40,14 +40,31 @@
         }
 
         .stitcher {
-            background-color: #dfecea;
+            background-color: #47857b;
             padding: 6px 6px;
             font-family: Helvetica Nueu, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             font-weight: bold;
+            color: #fff;
         }
 
         .form {
             background-color: #f1f7f6;
+        }
+
+        input {
+            border: 1px solid #47857b;
+        }
+
+        .subscribe {
+            background-color: #47857b;
+            border: 1px solid #47857b;
+            color: #fff;
+        }
+
+        .subscribe:hover {
+            color: #47857b;
+            background-color: #fff;
+            border: 1px solid #47857b;
         }
     </style>
 </head>
@@ -82,17 +99,17 @@
             >
                 <div class="grid grid-cols-1 gap-2 mb-2">
                     <label for="first_name">Your name</label>
-                    <input class="text-lg px-2 py-1 border-2 border-white" name="first_name" id="first_name" type="text" required/>
+                    <input class="text-lg px-2 py-1" name="first_name" id="first_name" type="text" required/>
                 </div>
 
                 <div class="grid grid-cols-1 gap-2 mb-2">
                     <label for="email">Email</label>
-                    <input class="text-lg px-2 py-1 border-2 border-white" name="email" id="email" type="email" required/>
+                    <input class="text-lg px-2 py-1" name="email" id="email" type="email" required/>
                 </div>
 
                 <div class="lg:col-span-2 text-left">
                     <div class="text-center lg:text-left lg:flex lg:items-center">
-                        <button type="submit" class="mt-4 lg:mt-0 font-mono bg-white text-black px-2 py-1">subscribe</button>
+                        <button type="submit" class="subscribe mt-4 lg:mt-0 font-mono bg-white text-black px-2 py-1">subscribe</button>
 
                         <p class="lg:ml-8 mt-4 lg:mt-0 text-sm">
                             You'll be automatically removed from this list after 10 days, no marketing mails or any other kind of followup!
